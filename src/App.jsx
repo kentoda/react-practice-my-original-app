@@ -1,6 +1,6 @@
 import React from 'react';
-import Button from '@material-ui/core/Button';
-import Tweet from "./Tweet";
+import './assets/styles/style.css';
+import {Tweet, Tweets} from "./component/index";
 
 const App = () =>  {
   return (

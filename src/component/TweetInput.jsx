@@ -1,4 +1,5 @@
 import React, {useRef, useCallback} from 'react';
+import Button from '@material-ui/core/Button';
 
 const TweetInput = (props) => {
  // 要素にアクセスするための参照を取得
@@ -20,7 +21,7 @@ const TweetInput = (props) => {
   return (
     <div>
       <div><textarea className="tweet-textarea" ref={textRef}></textarea></div>
-      <div><button onClick={sendTweet} className="send-tweet">Tweet</button></div>
+      <div><Button variant="contained" color="primary" onClick={sendTweet} className="send-tweet">Tweet</Button></div>
     </div>
   );
 };
